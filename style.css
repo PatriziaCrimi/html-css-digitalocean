@@ -1,0 +1,82 @@
+/* Common */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/************************* Header *************************/
+
+/* Header - Navbar */
+nav #navbar-top {
+border-bottom: 1px solid rgb(229,232,237);
+}
+
+nav.navbar .nav.navbar-nav.navbar-left > a:last-child::after {
+  content: '\25BA';
+}
+
+.navbar-header > a.navbar-brand > img {
+  max-height: 27px;
+}
+
+/* Header - Jumbotron */
+header #jumbotron {
+
+}
+
+/************************* Main *************************/
+
+/************************* Footer *************************/
+
+/******* Responsive Navbar - Breakpoint 1024px - Mobile First *******/
+@media screen and (max-width: 1024px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+/* Responsive - Breakpoint 768px */
+@media screen and (min-width: 768px) {
+}
+
+/* Responsive - Breakpoint 992px */
+@media screen and (min-width: 992px) {
+}
+
+/* Responsive - Breakpoint 1024px */
+@media screen and (min-width: 1024px) {
+}
+
+/* Responsive - Breakpoint 1200px */
+@media screen and (min-width: 1200px) {
+}
