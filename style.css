@@ -22,12 +22,26 @@ h2, h3, h4, h5 {
 p {
   color: #5b6987;
 }
+
+.btn.primary-white {
+  background-color: transparent;
+  border-color: #006aff;
+  color: #006aff;
+}
+
+.btn.primary-blue {
+  background-color: #006aff;
+  border-color: transparent;
+  color: #fff;
+}
+
 /************************* Header *************************/
 
 /* Header - Navbar */
-nav {
+nav.navbar.navbar-default.navbar-fixed-top {
   font-weight: 500;
   background-color: #ffffff !important;
+  margin-bottom: 0;
 }
 
 .navbar.navbar-default .container-fluid {
@@ -60,7 +74,7 @@ nav a:hover {
 }
 
 .navbar-header > a.navbar-brand > img {
-  height: 26px;
+  height: 27px;
 }
 
 #navbar-top {
@@ -104,7 +118,7 @@ nav a:hover {
 }
 
 #bs-example-navbar-collapse-1 ul.nav.navbar-nav {
-  margin-left: 28px;
+  margin-left: 16px;
 }
 
 #bs-example-navbar-collapse-1 ul.nav.navbar-nav li > a {
@@ -128,10 +142,7 @@ ul.nav.navbar-nav li.dropdown a::after {
 }
 
 .nav.navbar-nav.navbar-right .btn.btn-default.navbar-btn:first-child {
-  background-color: transparent;
-  border-color: #006aff;
-  color: #006aff;
-  margin-right: 7px;
+  margin-right: 10px;
 }
 
 .nav.navbar-nav.navbar-right .btn.btn-default.navbar-btn:first-child:hover {
@@ -141,15 +152,21 @@ ul.nav.navbar-nav li.dropdown a::after {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.25s ease-in-out
 }
 
-.nav.navbar-nav.navbar-right .btn.btn-default.navbar-btn:last-child {
-  background-color: #006aff;
-  border-color: transparent;
-  color: #fff;
-}
-
 /* Header - Jumbotron */
 header #jumbotron {
+  padding-top: 122px;
+  background-color: #0069ff;
+}
 
+#jumbotron form {
+  background-color: #fff;
+}
+
+#jumbotron form h3 {
+background-color: #f3f5f9;
+  color: #363636;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /************************* Main *************************/
@@ -195,17 +212,32 @@ header #jumbotron {
 }
 
 /* Responsive - Breakpoint 768px */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
 }
 
 /* Responsive - Breakpoint 992px */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
 }
 
 /* Responsive - Breakpoint 1024px */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
 }
 
 /* Responsive - Breakpoint 1200px */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
+  .no-padding-right {
+    padding-right: 0 !important;
+  }
+
+  #bs-example-navbar-collapse-1 ul.nav.navbar-nav {
+    margin-left: 35px;
+  }
+
+  .navbar-right {
+    margin-right: 0px;
+  }
+
+  .nav.navbar-nav.navbar-right .btn.btn-default.navbar-btn {
+    padding: 7px 14px;
+  }
 }
