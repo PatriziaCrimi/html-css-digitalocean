@@ -51,6 +51,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
   font-weight: 500;
   background-color: #ffffff !important;
   margin-bottom: 0;
+  box-shadow: 0px 0.5px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .navbar.navbar-default .container-fluid {
@@ -174,7 +175,7 @@ ul.nav.navbar-nav li.dropdown a::after {
 
 /* Header - Jumbotron */
 header #jumbotron {
-  padding-top: 160px;
+  padding-top: 180px;
   padding-bottom: 70px;
   background-color: #0069ff;
   background-image: url('img/bg_jumbo.svg');
@@ -195,12 +196,12 @@ header #jumbotron {
   background-color: #fff;
   border-radius: 6px;
   max-width: 370px;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 
 #form-section h3 {
   background-color: #f3f5f9;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 18px;
   letter-spacing: 1px;
   padding: 25px 0 20px 0;
@@ -225,6 +226,12 @@ header #jumbotron {
   box-shadow: none;
 }
 
+.form-group input:focus {
+  border-color: #0069ff;
+  outline: #0069ff;
+  box-shadow: none;
+}
+
 form {
   border-bottom: 1px solid #f3f5f9;
   padding-bottom: 20px !important;
@@ -237,6 +244,11 @@ form {
   font-size: 18px;
 }
 
+#form-section form button.primary-blue:hover {
+  background-color: #1633ff;
+  transition: background-color 0.3s ease;
+}
+
 .buttons-bottom button.primary-white {
   padding: 10px 0;
   height: 48px;
@@ -245,11 +257,20 @@ form {
   margin-right: 5px;
 }
 
+.buttons-bottom button.primary-white:hover {
+  color: #363636;
+  border-color: #5b6886;
+}
+
 .buttons-bottom a.btn {
   width: calc(20% - 2px);
   font-size: 20px;
   height: 48px;
   padding-top: 10px;
+}
+
+.buttons-bottom a.btn:hover {
+  border-color: #5b6886;
 }
 
 #jumbotron small {
@@ -262,7 +283,19 @@ small > span > a {
   font-size: 13px;
 }
 
+#jumbotron small > span > a:hover {
+  color: #fff;
+  border-bottom: dotted 1px rgba(255,255,255,0.5);
+  text-decoration: none;
+}
+
 /************************* Main *************************/
+
+/* Section -  */
+
+main section {
+
+}
 
 /************************* Footer *************************/
 
@@ -307,28 +340,33 @@ small > span > a {
 /* Responsive - Breakpoint 768px */
 @media screen and (min-width: 768px) {
   #jumbotron h1 {
-    font-size: 60px;
+    font-size: 58px;
     letter-spacing: 2px;
   }
 }
 
 /* Responsive - Breakpoint 992px */
 @media screen and (min-width: 992px) {
-}
-
-/* Responsive - Breakpoint 1024px */
-@media screen and (min-width: 1024px) {
-  header #jumbotron {
-    padding-top: 280px;
-    padding-bottom: 180px;
-  }
-
   #jumbotron h1,
   #jumbotron p {
     text-align: left;
   }
 
+  #jumbotron .title-subtitle {
+    padding-top: 120px;
+  }
 
+  #jumbotron #form-section {
+    margin-right: 0;
+  }
+}
+
+/* Responsive - Breakpoint 1024px */
+@media screen and (min-width: 1024px) {
+  header #jumbotron {
+    padding-top: 230px;
+    padding-bottom: 160px;
+  }
 }
 
 /* Responsive - Breakpoint 1200px */
