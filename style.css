@@ -30,6 +30,18 @@ p {
   font-weight: 300;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+.primary-grey {
+  background-color: #f3f5f9;
+}
+
+.secondary-white {
+  background-color: #ffffff;
+}
+
 .btn.primary-white {
   background-color: transparent;
   border-color: #0069ff;
@@ -65,7 +77,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
 
 nav a:hover {
   color: #006aff !important;
-  text-decoration: none;
 }
 
 .navbar-header button.navbar-toggle.collapsed {
@@ -286,14 +297,50 @@ small > span > a {
 #jumbotron small > span > a:hover {
   color: #fff;
   border-bottom: dotted 1px rgba(255,255,255,0.5);
-  text-decoration: none;
 }
 
 /************************* Main *************************/
 
-/* Section -  */
+/* First Section -  Logos */
+main #logos {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
 
-main section {
+#logos h4 {
+  text-transform: uppercase;
+  color: #5b6987;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+#logos .logo-wrapper {
+  margin: 0 auto 30px auto;
+}
+
+#logos a {
+  color: #0069ff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#logos a::after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: #0069ff;
+  font-size: 15px;
+  margin-left: 7px;
+}
+
+#logos a:hover {
+  color: #1633ff;
+}
+
+/* Second Section - General Info */
+main section#general-info {
 
 }
 
