@@ -3,30 +3,32 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-primary-grey {
-  background-color: #f3f5f9;
-}
-
-secondary-white {
-  background-color: #ffffff;
-}
-
 h1 {
   color: #fff;
-  font-weight: 700;
   font-size: 30px;
+  font-weight: 700;
 }
 
-h6 {
-  color: #fff;
-}
-
-h2, h3, h4, h5 {
+h2 {
   color: #031b4e;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #031b4e;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 p {
-  color: #5b6987;
+  font-size: 16px;
+  font-weight: 400;
+}
+p.subtitle {
+  font-size: 19px;
   font-weight: 300;
 }
 
@@ -34,12 +36,14 @@ a:hover {
   text-decoration: none;
 }
 
-.primary-grey {
+.bg-primary-grey {
   background-color: #f3f5f9;
+  color: #031b4e;
 }
 
-.secondary-white {
+.bg-secondary-white {
   background-color: #ffffff;
+  color: #5b6987;
 }
 
 .btn.primary-white {
