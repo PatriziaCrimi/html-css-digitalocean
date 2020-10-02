@@ -445,7 +445,7 @@ li.list-group-item:focus a {
 
 /* Third Section - Carousel Img */
 main section#carousel-img .img-container > img {
-  margin: 60px 0 30px 0;
+  margin: 40px 0 30px 0;
   box-shadow: 0 2px 4px rgba(3,27,78,0.06);
   border-radius: 5px;
 }
@@ -483,6 +483,63 @@ main section#business-info .business-info-box {
 
 #business-info .business-info-box p {
   padding-bottom: 20px;
+}
+
+/* Fifth Section - Data Centers */
+main section#data-centers {
+  background-color: #031b4e;
+  background-image: url('https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+#data-centers h2,
+#data-centers p {
+  color: #fff;
+}
+
+#data-centers p > span > a {
+  font-weight: 400;
+}
+
+#data-centers p > span > a:hover,
+#data-centers p > span > a:focus {
+  color: #1633ff;
+}
+
+#data-centers .table th {
+  text-transform: uppercase;
+}
+
+#data-centers .table td:first-of-type {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+#data-centers .table td > a {
+  color: #00d7d2;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#data-centers .table td > a::after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: #00d7d2;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+#data-centers .table td > a:hover {
+  color: #1633ff;
+}
+
+#data-centers .table td > a:hover::after {
+  color: #1633ff;
 }
 
 /************************* Footer *************************/
@@ -559,6 +616,12 @@ main section#business-info .business-info-box {
     padding-bottom: 40px;
   }
 
+  main section#carousel-img .img-container > img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .no-padding-bottom-sm {
     padding-bottom: 0 !important;
   }
@@ -593,9 +656,9 @@ main section#business-info .business-info-box {
     position: relative;
   }
 
-  #carousel-img .img-container img {
-    width: 80%;
-    /* margin: 0 auto; */
+  #carousel-img p {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   #carousel-img .img-container::before {
@@ -618,13 +681,6 @@ main section#business-info .business-info-box {
     position: absolute;
     top: 50%;
     right: 0;
-  }
-
-  #carousel-img .img-container::before:hover,
-  #carousel-img .img-container::before:active,
-  #carousel-img .img-container::after:hover,
-  #carousel-img .img-container::after:active {
-    color: #42517a;
   }
 }
 
@@ -656,5 +712,9 @@ main section#business-info .business-info-box {
 
   .nav.navbar-nav.navbar-right .btn.btn-default.navbar-btn:first-child {
     margin-right: 15px;
+  }
+
+  main section#carousel-img .img-container > img {
+    width: 70%;
   }
 }
