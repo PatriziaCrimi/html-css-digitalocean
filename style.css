@@ -29,6 +29,10 @@ p.subtitle {
   padding-top: 10px;
 }
 
+a {
+  color: #0069ff;
+}
+
 a:hover,
 a:focus,
 a:active {
@@ -324,9 +328,44 @@ small > span > a {
 }
 
 /************************* Main *************************/
+
+/* Common rules */
 main section {
   padding-top: 50px;
   padding-bottom: 60px;
+}
+
+#business-info a::after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: #0069ff;
+  font-size: 15px;
+  margin-left: 7px;
+}
+
+#logos a,
+#business-info a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+#logos a::after,
+#business-info a::after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: #0069ff;
+  font-size: 15px;
+  margin-left: 7px;
+}
+
+#logos a:hover,
+#logos a:hover::after,
+#business-info a:hover,
+#business-info a:hover::after {
+  color: #1633ff;
 }
 
 /* First Section -  Logos */
@@ -345,26 +384,6 @@ main section#logos {
 
 #logos .logo-wrapper {
   margin: 0 auto 30px auto;
-}
-
-#logos a {
-  color: #0069ff;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-#logos a::after {
-  content: '\f105';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: bold;
-  color: #0069ff;
-  font-size: 15px;
-  margin-left: 7px;
-}
-
-#logos a:hover,
-#logos a:hover::after {
-  color: #1633ff;
 }
 
 /* Second Section - General Info */
@@ -430,8 +449,16 @@ main section#carousel-img {
 }
 
 /* Fourth Section - Business Info */
-main section#business-info {
-  
+main section#business-info .business-info-box {
+  padding: 60px 0 70px 0;
+}
+
+#business-info .business-info-box h3 {
+  padding: 10px 0;
+}
+
+#business-info .business-info-box p {
+  padding-bottom: 20px;
 }
 
 /************************* Footer *************************/
@@ -530,7 +557,12 @@ main section#business-info {
 
   main section {
     padding-top: 100px;
-    padding-bottom: 120px;
+    padding-bottom: 110px;
+  }
+
+  main section#business-info .business-info-box {
+    text-align: left;
+    padding-bottom: 0;
   }
 }
 
