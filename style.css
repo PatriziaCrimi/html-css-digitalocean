@@ -17,7 +17,7 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 25px;
 }
@@ -444,8 +444,32 @@ li.list-group-item:focus a {
 }
 
 /* Third Section - Carousel Img */
-main section#carousel-img {
+main section#carousel-img .img-container > img {
+  margin: 60px 0 30px 0;
+  box-shadow: 0 2px 4px rgba(3,27,78,0.06);
+  border-radius: 5px;
+}
 
+#carousel-img p {
+  color: #5b6987;
+  padding-bottom: 15px;
+}
+
+#carousel-img .btn-group > button.btn.btn-default {
+  background-color: transparent;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  padding: 3px;
+  margin: 0 6px;
+  border: 2px solid #0069ff;
+}
+
+#carousel-img .btn-group > button.btn.btn-default.active,
+#carousel-img .btn-group > button.btn.btn-default:focus,
+#carousel-img .btn-group > button.btn.btn-default:active {
+  background-color: #0069ff;
+  outline: none;
 }
 
 /* Fourth Section - Business Info */
@@ -563,6 +587,44 @@ main section#business-info .business-info-box {
   main section#business-info .business-info-box {
     text-align: left;
     padding-bottom: 0;
+  }
+
+  main section#carousel-img .img-container {
+    position: relative;
+  }
+
+  #carousel-img .img-container img {
+    width: 80%;
+    /* margin: 0 auto; */
+  }
+
+  #carousel-img .img-container::before {
+    content: '\f060';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    color: #9ba3ba;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  #carousel-img .img-container::after {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    color: #9ba3ba;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  #carousel-img .img-container::before:hover,
+  #carousel-img .img-container::before:active,
+  #carousel-img .img-container::after:hover,
+  #carousel-img .img-container::after:active {
+    color: #42517a;
   }
 }
 
