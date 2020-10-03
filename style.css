@@ -365,7 +365,8 @@ main section {
 #logos a:hover,
 #logos a:hover::after,
 #business-info a:hover,
-#business-info a:hover::after {
+#business-info a:hover::after,
+#carousel-text a:hover {
   color: #1633ff;
 }
 
@@ -580,8 +581,67 @@ main section#data-centers {
 /* Fine Tabella */
 
 /* Sixth Section - Carousel Text */
-main section#carousel-text {
+main section#carousel-text p {
+  margin-bottom: 60px;
+}
 
+#carousel-text p.subtitle a {
+  font-weight: 400;
+}
+
+#carousel-text .carousel-wrapper {
+  border: 1px solid #f3f5f9;
+  box-shadow: 0px 2px 4px rgba(1,14,40,0.05);
+  border-radius: 6px;
+  opacity: 1;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+#carousel-text .carousel-wrapper > img {
+  max-width: 200px;
+  width: 300px;
+}
+
+#carousel-text .carousel-wrapper .quote > p {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 30px auto;
+  line-height: 35px;
+  display: inline-block;
+  padding: 0 70px;
+}
+
+#carousel-text .carousel-wrapper .quote > p > img:first-child {
+  width: 20px;
+  display: inline-block;
+}
+
+#carousel-text .carousel-wrapper .quote > p > img:last-child {
+  width: 8px;
+  display: inline-block;
+}
+
+#carousel-text .carousel-wrapper a {
+  font-size: 16px;
+  display: block;
+}
+
+#carousel-text .carousel-wrapper a + span {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  padding: 20px 0 5px 0;
+}
+
+#carousel-text .carousel-wrapper small {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#carousel-text .btn-group {
+  margin-top: 80px;
 }
 
 /************************* Footer *************************/
