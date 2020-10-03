@@ -13,7 +13,12 @@ h2 {
 h3 {
   color: #031b4e;
   font-size: 19px;
-  font-weight: 700;
+}
+
+h5 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 p {
@@ -675,7 +680,54 @@ main section#get-started {
 
 /************************* Footer *************************/
 footer {
-  
+  background-color: hsl(220,95%,8%);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+footer #footer-top {
+  border-bottom: 1px solid hsla(0,0%,100%,0.2);
+}
+
+#footer-top ul.list-group {
+
+}
+
+#footer-top ul.list-group > li.list-group-item {
+  background-color: transparent;
+  border: none;
+}
+
+ul.list-group > li.list-group-item > a {
+  color: hsla(0,0%,100%,0.5);
+}
+
+#footer-bottom small {
+  color: hsla(0,0%,100%,0.5);
+  font-size: 14px;
+}
+
+#footer-bottom .social {
+  display: inline-block;
+}
+
+#footer-bottom .social > a {
+  display: inline-block;
+  color: hsla(0,0%,100%,0.5);
+}
+
+#footer-bottom .social img {
+  filter: contrast(0%);
+}
+
+#footer-top ul.list-group > li.list-group-item > a:hover,
+#footer-bottom .social > a:hover {
+  color: hsla(0,0%,100%,1);
+}
+
+#footer-bottom .social > a > img:hover {
+  filter: brightness(0) invert(1);
 }
 
 /******* Responsive Navbar - Breakpoint 1024px - Mobile First *******/
