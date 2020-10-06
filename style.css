@@ -671,6 +671,7 @@ main section#get-started {
   border-radius: 4px;
   font-weight: 800;
   font-size: 16px;
+  margin-top: 10px;
 }
 
 #get-started a.btn.btn-default:hover {
@@ -729,6 +730,10 @@ ul.list-group > li.list-group-item > a {
 
 #footer-bottom .footer-bottom-right .social img {
   filter: contrast(0%);
+}
+
+#footer-bottom .social i, .social img {
+  vertical-align: middle;
 }
 
 #footer-top ul.list-group > li.list-group-item > a:hover,
